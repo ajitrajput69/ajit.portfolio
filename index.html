@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ajit Rajput | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="navbar">
+    <nav>
+        <h2 class="logo">Ajit</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="themeToggle">🌙</button>
+    </nav>
+</header>
+
+<section id="home" class="home">
+    <h1>Hi, I'm <span>Ajit Rajput</span></h1>
+    <h2><span id="typing"></span></h2>
+    <button onclick="scrollToSection('contact')">Hire Me</button>
+</section>
+
+<section id="about" class="fade">
+    <h2>About Me</h2>
+    <p>
+        I am a BTech CSE student passionate about coding, web development,
+        and creating real-world projects.
+    </p>
+</section>
+
+<section id="projects" class="fade">
+    <h2>Projects</h2>
+
+    <div class="projects-container">
+        <div class="card">
+            <h3>Biodegradable Plastic</h3>
+            <p>Eco-friendly material project.</p>
+        </div>
+
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Modern personal website.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="fade">
+    <h2>Contact</h2>
+    <form id="contactForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Ajit Rajput</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
