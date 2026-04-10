@@ -1,0 +1,112 @@
+:root {
+    --bg: #111;
+    --text: #fff;
+    --primary: cyan;
+}
+
+.light-mode {
+    --bg: #fff;
+    --text: #000;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial;
+    transition: 0.3s;
+}
+
+/* Navbar */
+header {
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+/* Home */
+.home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Cards */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: #222;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Fade animation */
+.fade {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+
+input, textarea {
+    margin: 10px;
+    padding: 10px;
+}
+
+button {
+    background: var(--primary);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media(max-width: 768px){
+    .projects-container {
+        flex-direction: column;
+    }
+}
